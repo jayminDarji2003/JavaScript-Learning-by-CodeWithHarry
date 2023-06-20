@@ -13,7 +13,7 @@ console.log("------- Arithmatic Operators ---------");
 // console.log("a * b = " , a*b);
 // console.log("a % b = " , a%b);
 
-// console.log("a ** b = " , a**b); // called Exponential operator
+ //console.log("a ** b = " , a**b); // called Exponential operator
 
 // console.log("a++ = " , a++);
 // console.log("++a = " , ++a);
