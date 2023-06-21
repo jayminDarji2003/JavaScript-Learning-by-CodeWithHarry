@@ -6,23 +6,23 @@
     // c) if..elseif..else
 // ? Additional one is Switch Case
 
-// let a = prompt("Hey, what's your age..?")
-// console.log(typeof a)
-// a = Number.parseInt(a);  // converting String to number
-// console.log(typeof a)
+let a = prompt("Hey, what's your age..?")
+console.log(typeof a)
+a = Number.parseInt(a);  // converting String to number
+console.log(typeof a)
 
 // if statement
-// if (a > 0) {
-//   alert("This is valid age ")
-// }
+if (a > 0) {
+  alert("This is valid age ")
+}
 
 
 // if else statement
-// if (a > 0) {
-//   alert("This is valid age ")
-// }else{
-//   alert("This is an inValid age")
-// }
+if (a > 0) {
+  alert("This is valid age ")
+}else{
+  alert("This is an inValid age")
+}
 
 //if elseif statement
 // if (a < 0) {
