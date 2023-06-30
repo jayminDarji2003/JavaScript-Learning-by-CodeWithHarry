@@ -1,4 +1,5 @@
 // All about While loops and do-while loops
+// ! Note :- prompt will not run on VS CODE.
 
 // While loop
 let n = prompt("Enter the value of n :- ");
