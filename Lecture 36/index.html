@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture - 36 | searching the DOM</title>
+    <!-- css cdn link  bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-secondary">
+    <!-- navbar starts here  -->
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">JDcods</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Give work</a></li>
+                            <li><a class="dropdown-item" href="#">Source Code</a></li>
+                            <li><a class="dropdown-item" href="#">Lecture of coding</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact us</a>
+                    </li>
+                    
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends here  -->
+
+    <!-- main section starts here  -->
+    <div class="container my-5" id="home">
+        <div id="carouselExampleIndicators" class="carousel slide bg-black">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1621361070324-ff37f0724d87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTg2NjV8MHwxfHNlYXJjaHw5fHxsYXB0b3AlMjBtYW58ZW58MHx8fHwxNjg5ODUzOTQ1fDA&ixlib=rb-4.0.3&q=80&w=400"
+                        class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1617870952348-7524edfb61b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTg2NjV8MHwxfHNlYXJjaHw2fHxsYXB0b3AlMjBtYW58ZW58MHx8fHwxNjg5ODUzOTQ1fDA&ixlib=rb-4.0.3&q=80&w=400"
+                        class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1612299273045-362a39972259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTg2NjV8MHwxfHNlYXJjaHwzfHxsYXB0b3AlMjBtYW58ZW58MHx8fHwxNjg5ODUzOTQ1fDA&ixlib=rb-4.0.3&q=80&w=400"
+                        class="d-block w-100 h-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- main section ends here  -->
+
+    <hr />
+
+    <section class="container my-5 d-flex justify-content-center flex-wrap gap-4">
+        <div class="card" style="width: 20rem;">
+            <img src="https://images.unsplash.com/photo-1622463461333-611830d028bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTg2NjV8MHwxfHNlYXJjaHwxM3x8bGFwdG9wJTIwbWFufGVufDB8fHx8MTY4OTg1NDYzNXww&ixlib=rb-4.0.3&q=80&w=400"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 20rem;">
+            <img src="https://images.unsplash.com/photo-1622463461333-611830d028bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTg2NjV8MHwxfHNlYXJjaHwxM3x8bGFwdG9wJTIwbWFufGVufDB8fHx8MTY4OTg1NDYzNXww&ixlib=rb-4.0.3&q=80&w=400"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link myLink p-2">Another link</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 20rem;">
+            <img src="https://images.unsplash.com/photo-1622463461333-611830d028bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTg2NjV8MHwxfHNlYXJjaHwxM3x8bGFwdG9wJTIwbWFufGVufDB8fHx8MTY4OTg1NDYzNXww&ixlib=rb-4.0.3&q=80&w=400"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+            </div>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- js file link  -->
+    <script src="./index.js"></script>
+    <!-- js cdn link bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
